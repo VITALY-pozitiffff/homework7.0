@@ -11,11 +11,11 @@ public class Main {
             System.out.println("Месяц " + month + " ,сумма накоплений равна " + saving + " рублей");
      }
         System.out.println("Задача 2");
-        int i = 1;
+
         int j = 10;
-        while (i <= 10) {
-            System.out.print(i + " ");
-            i++;
+        for (int i = 1;i <= 10;i++) {
+            System.out.print(i+ " ");
+
         }
         System.out.println();
         while (j >= 1) {
@@ -24,20 +24,20 @@ public class Main {
         }
         System.out.println();
         System.out.println("Задача 3");
-        long countryY = 12_000_000L;
+        long countryPopulation = 12_000_000L;
         int birthRate = 17;
         int death = 8;
         int year = 0;
         double growthRoy = (birthRate - death) / 1000.0;
-        System.out.println("Начальное население : " + countryY);
+        System.out.println("Начальное население : " + countryPopulation);
 
         while (year < 10) {
             year++;
 
-            long growth = (long) (countryY * growthRoy);
-            countryY = (countryY + growth);
+            long growth = (long) (countryPopulation * growthRoy);
+            countryPopulation = (countryPopulation + growth);
 
-            System.out.println("Год " + year + ", численность населения составляет " + countryY);
+            System.out.println("Год " + year + ", численность населения составляет " + countryPopulation);
         }
         System.out.println("Задача 4");
         int intialAmount = 15000;
